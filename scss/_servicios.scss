@@ -1,0 +1,70 @@
+/*Servicios */
+
+@keyframes fontAnimation {
+
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;    }
+}
+
+
+.servicios {
+    background-color: #dcdcdc;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    div {
+        width: 50%;
+        height: 15rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &:hover p {
+            visibility: visible;
+            animation-name: fontAnimation;
+            animation-duration: 2s;
+        }
+    }
+
+    img {
+        width: 25%;
+        max-width: 7rem;
+        margin-left: 20%;
+
+
+    }
+
+    p {
+        visibility: hidden;
+        font-family: $secondaryFont;
+        font-weight: lighter;
+        margin-right: auto;
+        justify-self: left;
+        font-size: 170%;
+
+    }
+
+    @media only screen and (max-width: 700px) {
+        
+        p {
+            margin-left: 0.7rem;
+        }
+    }
+
+    @media only screen and (min-width:701px) {
+        p {
+            margin-left: 1.6rem;
+        }
+    }
+}    
+
+
+
+
+

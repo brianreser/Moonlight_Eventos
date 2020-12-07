@@ -1,0 +1,71 @@
+            /* Footer */
+
+.footer__redes {
+    text-align: center;
+    margin: 4rem;
+
+    img {
+        margin: 0.3rem;
+        width: 2.5rem;
+    }
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    
+    div {
+        width: 50%;
+
+        & > h2 {
+            padding: 0.2rem;
+            font-size: 100%;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        font-family: 'Reem Kufi', sans-serif;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #cbcbcb;
+        padding-top: 2%;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > h2 {
+            font-size: 130%;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: larger;
+        }
+
+        &:hover ul {
+            visibility: visible;
+        }
+    }
+
+    ul ul {
+        visibility: hidden;
+        position: relative;
+        right: 2rem;
+
+        li {
+            border-radius: 100%;
+            background-color: white;
+            float: left;
+            margin: auto 1rem auto 1rem;
+
+            a {
+                margin: 0.5rem; 
+            }
+        }
+    }
+}

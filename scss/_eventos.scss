@@ -1,0 +1,102 @@
+/*Eventos */
+
+.eventos {
+
+    background-color: #dcdcdc;;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: #efefef;
+        width: 48%;
+        display: flex;
+        flex-direction: column;      
+        margin: 0.4rem;
+        font-family: $secondaryFont;
+
+        & ol {
+            font-family: $primaryFont;    
+            text-align: justify;
+            list-style: none;      
+            margin: 0.1rem auto auto auto;
+        }
+
+    }
+
+    h2 {
+        color: #232323;
+        text-align: center;
+        font-family: "Oregano";
+        margin: 1rem auto 0.3rem auto;
+    }
+
+    #eventos__presupuesto {
+        
+        
+        background-color: #3b3b3b;
+        border: 3px solid #232323;
+        margin-top: 2rem;
+        color: #dcdcdc;
+
+        &:hover {
+            background-color: #dcdcdc;
+            color: #212121;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        h2 {
+            
+            font-family: $primaryFont;
+            color: #dcdcdc;
+            margin: 0.2rem;
+            font-size: 150%;
+            &:hover { color: #212121;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+
+        h2 {
+            font-size: 190%;
+        }
+
+        ol {
+            padding-right: 10%;
+            font-size: 130%;
+        }
+
+        #eventos__presupuesto {
+            width: 55%;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @media only screen and (min-width:701px) {
+
+        h2 {
+            font-size: 150%;
+        }
+
+        div {       
+            font-size: 150%;
+        }
+            
+        ol {
+            padding-right: 8%;
+        }
+            
+        #eventos__presupuesto {
+            width: 35%;
+            margin-bottom: 1rem;
+        }
+    }
+}
